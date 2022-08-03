@@ -1,0 +1,308 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary"
+        android:layout_marginTop="0dp" >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MEAT PACKING"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginStart="@dimen/_105sdp"/>
+
+    </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardItemPLU"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:backgroundTint="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_18sdp"
+            android:text="PLU"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/_18ssp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_245sdp"
+            android:background="@drawable/background">
+
+            <TextView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_18sdp"
+                android:padding="@dimen/_18sdp"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardItemChickenCurryCut"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:backgroundTint="@color/white"
+        android:layout_below="@id/cardItemPLU"
+        android:layout_marginTop="@dimen/_2sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_18sdp"
+            android:text="Chicken Curry Cut"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/_18ssp"
+            android:textStyle="bold" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardItemTare"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:backgroundTint="@color/white"
+        android:layout_below="@id/cardItemChickenCurryCut"
+        android:layout_marginTop="@dimen/_2sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_18sdp"
+            android:text="Tare"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/_18ssp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_245sdp"
+            android:background="@drawable/background">
+
+            <TextView
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/_18sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:padding="@dimen/_18sdp"
+                android:text="5g"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardItemMRP"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_below="@id/cardItemTare"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:backgroundTint="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_18sdp"
+            android:text="MRP"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/_18ssp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_205sdp"
+            android:background="@drawable/background">
+
+            <TextView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_18sdp"
+                android:padding="@dimen/_18sdp"
+                android:text="₹299.0"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardItemWeight"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:backgroundTint="@color/white"
+        android:layout_below="@id/cardItemMRP"
+        android:layout_marginTop="@dimen/_2sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_18sdp"
+            android:text="Weight"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/_18ssp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_245sdp"
+            android:background="@drawable/background">
+
+            <TextView
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_18sdp"
+                android:padding="@dimen/_18sdp"
+                android:text="0g"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardItemPrice"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:backgroundTint="@color/white"
+        android:layout_below="@id/cardItemWeight"
+        android:layout_marginTop="@dimen/_2sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_18sdp"
+            android:text="Price"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/_18ssp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_245sdp"
+            android:background="@drawable/background">
+
+            <TextView
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginRight="@dimen/_18sdp"
+                android:padding="@dimen/_18sdp"
+                android:text="₹0"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/offer_button"
+        android:layout_width="210dp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/primary"
+        android:duplicateParentState="true"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/arrow_left"
+            app:tint="@color/white" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/msg_button"
+        android:layout_width="210dp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginStart="@dimen/_1sdp"
+        android:layout_toEndOf="@+id/offer_button"
+        android:backgroundTint="@color/primary"
+        android:duplicateParentState="true"
+        android:paddingStart="5dp"
+        android:paddingRight="10dp"
+        android:text="message"
+        android:textColor="@color/white">
+
+        <ImageView
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/arrowright"
+            app:tint="@color/white" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</RelativeLayout>
